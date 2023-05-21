@@ -6,7 +6,7 @@
 
 <form action="/contact" method="get">
   <label for="member">Who are you looking for?</label>
-  <input name="member" type="text" placeholder="Federico">
+  <input value="<%= params[:member] %>" name="member" type="text" placeholder="Federico">
   <input type="submit">
 </form>
 

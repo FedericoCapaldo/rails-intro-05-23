@@ -4,4 +4,7 @@ class PagesController < ApplicationController
     @message = "hellooooo"
   end
 
+  def contact
+  end
+
 end

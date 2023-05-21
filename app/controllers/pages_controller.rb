@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def about
-    @message = "hellooooo"
+    @members = ["thanh", "dimitri", "germain", "damien", "julien"]
   end
 
   def contact

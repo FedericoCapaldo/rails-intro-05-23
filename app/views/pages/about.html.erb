@@ -1,1 +1,10 @@
-<h1><%= @message %></h1>
+
+<h1>About</h1>
+
+These are our employees
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>

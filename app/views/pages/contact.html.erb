@@ -2,10 +2,20 @@
 
 <p>if you want to get in touch write to use with the following form:</p>
 
-<form action="">
-  <input type="textarea">
-  <button type="submit">Submit</button>
+
+
+<form action="/contact" method="get">
+  <label for="member">Who are you looking for?</label>
+  <input name="member" type="text" placeholder="Federico">
+  <input type="submit">
 </form>
+
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>
 
 
 <%= link_to("<- Go Back to Homepage", root_path) %>
